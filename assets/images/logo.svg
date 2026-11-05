@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none">
+  <!-- Grain Sheaf / Stalk Icon -->
+  <g class="logo-icon">
+    <circle cx="32" cy="32" r="30" fill="url(#brandGrad)" />
+    <!-- Wheat/Rice Stalk -->
+    <path d="M32 50V16M32 20C27 18 22 22 22 26C22 30 27 32 32 30M32 20C37 18 42 22 42 26C42 30 37 32 32 30M32 28C26 26 21 30 21 34C21 38 26 40 32 38M32 28C38 26 43 30 43 34C43 38 38 40 32 38M32 36C27 35 23 38 23 42C23 45 27 46 32 45M32 36C37 35 41 38 41 42C41 45 37 46 32 45" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="32" cy="15" r="2.5" fill="#fef08a" />
+  </g>
+  
+  <!-- Text Brand -->
+  <g class="logo-text">
+    <text x="74" y="34" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="800" fill="currentColor" letter-spacing="-0.5">
+      Agro<tspan fill="#d4a373">Grains</tspan>
+    </text>
+    <text x="74" y="49" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600" fill="currentColor" opacity="0.75" letter-spacing="2.2">
+      WHOLESALE MERCHANT
+    </text>
+  </g>
+
+  <defs>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1b4332" />
+      <stop offset="1" stop-color="#2d6a4f" />
+    </linearGradient>
+  </defs>
+</svg>
+

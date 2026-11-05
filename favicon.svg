@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="brandFavGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1b4332" />
+      <stop offset="1" stop-color="#2d6a4f" />
+    </linearGradient>
+  </defs>
+  <!-- Background circular badge with subtle border -->
+  <circle cx="32" cy="32" r="30" fill="url(#brandFavGrad)" stroke="#40916c" stroke-width="2"/>
+  <!-- Wheat / Rice Stalk -->
+  <path d="M32 50V16M32 20C27 18 22 22 22 26C22 30 27 32 32 30M32 20C37 18 42 22 42 26C42 30 37 32 32 30M32 28C26 26 21 30 21 34C21 38 26 40 32 38M32 28C38 26 43 30 43 34C43 38 38 40 32 38M32 36C27 35 23 38 23 42C23 45 27 46 32 45M32 36C37 35 41 38 41 42C41 45 37 46 32 45" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Top golden grain seed kernel -->
+  <circle cx="32" cy="14" r="3" fill="#fef08a" stroke="#ca8a04" stroke-width="0.8"/>
+</svg>

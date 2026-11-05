@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AgroGrains Wholesale - Premier B2B supplier of export-grade Basmati, Sona Masoori, Ponni, Milling Wheat, Corn, and Pulses to supermarkets, distributors, and bulk buyers.">
+  <meta name="keywords" content="wholesale rice supplier, bulk grain merchant, basmati rice export, sona masoori wholesale, pulses supplier, 50kg rice sacks, B2B grain trading">
+  <title>AgroGrains Wholesale | Direct Mill Rice &amp; Agricultural Grains Merchant</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon-180x180.png">
+
+  <!-- Bootstrap 5 CSS (Dynamic ID for RTL swapping) -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- Global Single Navigation Bar Across Entire Website -->
+  <nav class="navbar navbar-expand-lg wholesale-navbar sticky-top" id="mainWholesaleNavbar" aria-label="Main Wholesale Navigation">
+    <div class="container-xl">
+      <!-- Brand Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2 text-decoration-none" href="index.html">
+        <img src="assets/images/brand-icon.svg" alt="AgroGrains Emblem" width="38" height="38" class="navbar-brand-logo">
+        <span class="brand-title text-white fw-bold fs-4" style="color: #ffffff !important; line-height: 1; letter-spacing: -0.02em;">AgroGrains</span>
+      </a>
+
+      <!-- Mobile Toggles Group -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button id="theme-toggle-btn-mobile" class="nav-control-btn" type="button" aria-label="Toggle Theme" title="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button id="rtl-toggle-btn-mobile" class="nav-control-btn" type="button" aria-label="Toggle RTL" title="Toggle Direction">
+          <span class="fw-bold">RTL</span>
+        </button>
+        <button class="navbar-toggler border-0 shadow-none text-white p-2" type="button" data-bs-toggle="collapse" data-bs-target="#wholesaleNavDropdown" aria-controls="wholesaleNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2 text-white"></i>
+        </button>
+      </div>
+
+      <!-- Single Navigation Container -->
+      <div class="collapse navbar-collapse" id="wholesaleNavDropdown">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="javascript:void(0)" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu shadow-lg" aria-labelledby="homeDropdown">
+              <li>
+                <a class="dropdown-item active" id="nav-home-1" href="index.html">
+                  <i class="bi bi-shop me-2 text-primary"></i> Home Page 1 â€“ General Wholesale
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" id="nav-home-2" href="home-2.html">
+                  <i class="bi bi-globe-americas me-2 text-primary"></i> Home Page 2 â€“ Trading &amp; Distribution
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bulk-pricing.html">Bulk Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Action Controls & Quote CTA -->
+        <div class="d-flex align-items-center gap-2 nav-actions-group">
+          <!-- Theme Toggle (Only Icon) -->
+          <button id="theme-toggle-btn" class="nav-control-btn d-none d-lg-inline-flex" type="button" aria-label="Toggle theme" title="Toggle Dark/Light Mode">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          
+          <!-- RTL Toggle (Only Text Name) -->
+          <button id="rtl-toggle-btn" class="nav-control-btn d-none d-lg-inline-flex" type="button" aria-label="Toggle RTL reading direction" title="Toggle Direction">
+            <span class="fw-bold">RTL</span>
+          </button>
+
+          <!-- Request a Quote CTA Button -->
+          <button class="nav-quote-btn ms-lg-2" type="button" onclick="openQuoteModal()">
+            <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+            <span>Request a Quote</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-home">
+      <div class="container-xl">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="pe-lg-4">
+              <span class="section-tag"><i class="bi bi-check-circle-fill me-1"></i> Mill-Direct B2B Wholesale Supply</span>
+              <h1 class="hero-headline">
+                Direct-from-Mill Wholesale <span class="highlight">Rice &amp; Agricultural Grains</span>
+              </h1>
+              <p class="hero-lead">
+                Supplying premium Basmati, Sona Masoori, Milling Wheat, and Pulses in commercial 25kg, 50kg sacks and container loads to supermarket chains, regional distributors, and food processors worldwide.
+              </p>
+              
+              <div class="d-flex flex-wrap gap-3 mb-4 hero-buttons-wrapper">
+                <a href="products.html" class="btn btn-wholesale-primary">
+                  <i class="bi bi-grid-3x3-gap-fill"></i> Explore Products
+                </a>
+                <a href="bulk-pricing.html" class="btn btn-wholesale-secondary">
+                  <i class="bi bi-cash-stack"></i> Request Bulk Pricing
+                </a>
+              </div>
+
+              <!-- Quick Highlights Badges -->
+              <div class="row g-2 pt-2 border-top border-subtle">
+                <div class="col-sm-4 col-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-patch-check-fill text-primary fs-5"></i>
+                    <span class="small fw-bold">100% Sortexed</span>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-truck text-primary fs-5"></i>
+                    <span class="small fw-bold">Multi-Truckload Ready</span>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-12">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-shield-fill-check text-primary fs-5"></i>
+                    <span class="small fw-bold">FSSAI / ISO Quality</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image-wrapper mt-4 mt-lg-0">
+              <!-- Unique Home 1 Hero Warehouse Image -->
+              <img src="assets/images/h1-hero-warehouse.jpg" alt="Wholesale Rice and Grains Modern Distribution Warehouse" loading="eager">
+              <div class="hero-badge-overlay">
+                <i class="bi bi-building-check"></i>
+                <div>
+                  <div class="badge-title">Commercial Grain Terminal</div>
+                  <div class="badge-desc">50,000 MT Annual Milling &amp; Dispatch Throughput</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wholesale Statistics Counter Strip -->
+    <section class="stats-strip">
+      <div class="container-xl">
+        <div class="row g-0">
+          <div class="col-md-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">50,000+</div>
+              <div class="stat-label">Metric Tons Annual Supply</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">40+</div>
+              <div class="stat-label">Rice &amp; Grain Varieties</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">25+</div>
+              <div class="stat-label">Years Wholesale Heritage</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">1,250+</div>
+              <div class="stat-label">Active Institutional Buyers</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-2">
+          <small class="text-muted fst-italic">* Operational metrics verified based on rolling 12-month mill dispatch records (editable placeholder).</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Rice Varieties Section (Unique Home 1 Images) -->
+    <section class="py-5">
+      <div class="container-xl">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+          <div>
+            <span class="section-tag">Direct From Rice Mills</span>
+            <h2 class="section-title mb-1">Featured Rice Varieties</h2>
+            <p class="section-subtitle mb-0 ms-0">Export-grade, Sortex-cleaned white, steam, parboiled, and aged varieties.</p>
+          </div>
+          <div class="mt-3 mt-md-0">
+            <a href="products.html" class="btn btn-outline-primary rounded-pill px-3 py-2 fw-bold">
+              View All 15 Products <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Featured 1: 1121 Basmati -->
+          <div class="col-lg-4 col-md-6">
+            <div class="wholesale-product-card">
+              <div class="product-card-img-wrapper">
+                <img src="assets/images/prod-basmati-1121.jpg" alt="1121 Steam Basmati Rice" loading="lazy">
+                <span class="product-category-badge">Basmati Rice</span>
+                <span class="product-moq-badge"><i class="bi bi-box-seam me-1"></i>MOQ: 5 MT</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-card-title">1121 Steam Basmati Rice</h3>
+                <p class="product-card-desc">Slender 8.35mm+ raw grain elongating up to 2.2x cooked, ideal for biryani and luxury foodservice packaging.</p>
+                <div class="product-specs-list">
+                  <div class="product-spec-row">
+                    <span class="product-spec-label">Grain Length:</span>
+                    <span class="product-spec-value">8.35 mm Average</span>
+                  </div>
+                  <div class="product-spec-row">
+                    <span class="product-spec-label">Moisture / Broken:</span>
+                    <span class="product-spec-value">Max 12.5% | &lt; 1% Broken</span>
+                  </div>
+                  <div class="product-spec-row">
+                    <span class="product-spec-label">Packaging:</span>
+                    <span class="product-spec-value">25kg / 50kg BOPP Sacks</span>
+                  </div>
+                </div>
+                <div class="product-card-footer">
+                  <button class="btn btn-wholesale-primary flex-grow-1" onclick="openQuoteModal('1121 Steam Basmati Rice')">
+                    <i class="bi bi-file-earmark-text"></i> Request Quote
+                  </button>
+                  <a href="products.html?category=basmati&search=1121" class="btn btn-wholesale-secondary" title="View details in catalog">
+                    <i class="bi bi-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured 2: Sona Masoori -->
+          <div class="col-lg-4 col-md-6">
+            <div class="wholesale-product-card">
+              <div class="product-card-img-wrapper">
+                <img src="assets/images/prod-sona-masoori.jpg" alt="Sona Masoori Raw and Steam Rice" loading="lazy">
+                <span class="product-category-badge">Non-Basmati</span>
+                <span class="product-moq-badge"><i class="bi bi-box-seam me-1"></i>MOQ: 5 MT</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-card-title">Sona Masoori Rice (Raw &amp; Steam)</h3>
+                <p class="product-card-desc">Lightweight, aromatic medium-grain rice with silky Sortex polish for regional supermarket private labeling.</p>
+                <div class="product-specs-list">
+                  <div class="product-spec-row">
+                    <span class="product-spec-label">Grain Length:</span>
+                    <span class="product-spec-value">5.10 mm Medium</span>
+                  </div>
+                  <div class="product-spec-row">
+                    <span class="product-spec-label">Moisture / Broken:</span>
+                    <span class="product-spec-value">Max 13.0% | &lt; 2% Broken</span>
+                  </div>
+                  <div class="product-spec-row">
+                    <span class="product-spec-label">Packaging:</span>
+                    <span class="product-spec-value">25kg / 50kg Polypropylene</span>
+                  </div>
+                </div>
+                <div class="product-card-footer">
+                  <button class="btn btn-wholesale-primary flex-grow-1" onclick="openQuoteModal('Sona Masoori Rice (Raw & Steam)')">
+                    <i class="bi bi-file-earmark-text"></i> Request Quote
+                  </button>
+                  <a href="products.html?category=non-basmati&search=sona" class="btn btn-wholesale-secondary" title="View details in catalog">
+                    <i class="bi bi-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured 3: Ponni Boiled -->
+          <div class="col-lg-4 col-md-6">
+            <div class="wholesale-product-card">
+              <div class="product-card-img-wrapper">
+                <img src="assets/images/prod-ponni-boiled.jpg" alt="Ponni Boiled Parboiled Rice" loading="lazy">
+                <span class="product-category-badge">Parboiled Rice</span>
+                <span class="product-moq-badge"><i class="bi bi-box-seam me-1"></i>MOQ: 10 MT</span>
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-card-title">Ponni Boiled / Parboiled Rice</h3>
+                <p class="product-card-desc">High-amylose parboiled grains with firm texture and high volume expansion, engineered for catering and mess halls.</p>
+                <div class="product-specs-list">
+                  <div class="product-spec-row">
+                    <span class="product-spec-label">Grain Length:</span>
+                    <span class="product-spec-value">5.40 mm Sortex</span>
+                  </div>
+                  <div class="product-spec-row">
+                    <span class="product-spec-label">Moisture / Broken:</span>
+                    <span class="product-spec-value">Max 13.5% | &lt; 2.5% Broken</span>
+                  </div>
+                  <div class="product-spec-row">
+                    <span class="product-spec-label">Packaging:</span>
+                    <span class="product-spec-value">50kg Heavy Sacks</span>
+                  </div>
+                </div>
+                <div class="product-card-footer">
+                  <button class="btn btn-wholesale-primary flex-grow-1" onclick="openQuoteModal('Ponni Boiled / Parboiled Rice')">
+                    <i class="bi bi-file-earmark-text"></i> Request Quote
+                  </button>
+                  <a href="products.html?category=non-basmati&search=ponni" class="btn btn-wholesale-secondary" title="View details in catalog">
+                    <i class="bi bi-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Grains & Pulses Categories Preview (Updated with Dedicated Product Images & Functional Links) -->
+    <section class="py-5 bg-muted">
+      <div class="container-xl">
+        <div class="text-center mb-5">
+          <span class="section-tag">Agricultural Commodities</span>
+          <h2 class="section-title">Popular Grains &amp; Pulses Categories</h2>
+          <p class="section-subtitle">Beyond rice, we supply commercial volumes of milling wheat, corn kernels, millets, and unpolished lentils.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Commodity 1: Milling Wheat & Durum -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="commodity-preview-card h-100 d-flex flex-column">
+              <div class="commodity-card-img-wrap">
+                <img src="assets/images/prod-wheat-milling.jpg" alt="Milling Wheat &amp; Durum Grains" loading="lazy">
+                <span class="commodity-tag">Grains &amp; Cereals</span>
+              </div>
+              <div class="commodity-card-body d-flex flex-column flex-grow-1 p-3">
+                <h4 class="commodity-title">Milling Wheat &amp; Durum</h4>
+                <p class="commodity-desc text-muted small flex-grow-1 mb-3">High-gluten Sharbati &amp; Lokwan milling wheat for industrial flour mills and bakeries. Moisture tested &lt; 11.5%.</p>
+                <a href="products.html?category=grains&search=wheat" class="explore-commodity-link mt-auto fw-bold text-primary small text-decoration-none">
+                  Explore Wheat Specs <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commodity 2: Yellow Maize (Corn) -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="commodity-preview-card h-100 d-flex flex-column">
+              <div class="commodity-card-img-wrap">
+                <img src="assets/images/prod-yellow-maize.jpg" alt="Yellow Grain Maize Corn" loading="lazy">
+                <span class="commodity-tag">Grains &amp; Cereals</span>
+              </div>
+              <div class="commodity-card-body d-flex flex-column flex-grow-1 p-3">
+                <h4 class="commodity-title">Yellow Maize (Corn)</h4>
+                <p class="commodity-desc text-muted small flex-grow-1 mb-3">Standardized feed-grade and starch-grade yellow corn kernels with verified low aflatoxin (&lt; 20 ppb).</p>
+                <a href="products.html?category=grains&search=maize" class="explore-commodity-link mt-auto fw-bold text-primary small text-decoration-none">
+                  Explore Maize Specs <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commodity 3: Pearl & Finger Millets -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="commodity-preview-card h-100 d-flex flex-column">
+              <div class="commodity-card-img-wrap">
+                <img src="assets/images/prod-millet-grains.jpg" alt="Pearl Bajra and Finger Ragi Millets" loading="lazy">
+                <span class="commodity-tag">Grains &amp; Cereals</span>
+              </div>
+              <div class="commodity-card-body d-flex flex-column flex-grow-1 p-3">
+                <h4 class="commodity-title">Pearl &amp; Finger Millets</h4>
+                <p class="commodity-desc text-muted small flex-grow-1 mb-3">Clean-graded Bajra, Ragi, and Foxtail millets packed for FMCG health food brands and institutional porridge supply.</p>
+                <a href="products.html?category=grains&search=millet" class="explore-commodity-link mt-auto fw-bold text-primary small text-decoration-none">
+                  Explore Millets Specs <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commodity 4: Unpolished Pulses & Dals -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="commodity-preview-card h-100 d-flex flex-column">
+              <div class="commodity-card-img-wrap">
+                <img src="assets/images/prod-toor-dal.jpg" alt="Unpolished Pulses and Split Dals" loading="lazy">
+                <span class="commodity-tag">Pulses &amp; Dals</span>
+              </div>
+              <div class="commodity-card-body d-flex flex-column flex-grow-1 p-3">
+                <h4 class="commodity-title">Unpolished Pulses &amp; Dals</h4>
+                <p class="commodity-desc text-muted small flex-grow-1 mb-3">Sortex-cleaned Toor, Urad, Moong, and Chana dals. Fatka unpolished processing ensures pure protein without oil polishing.</p>
+                <a href="products.html?category=pulses" class="explore-commodity-link mt-auto fw-bold text-primary small text-decoration-none">
+                  Explore Pulses Specs <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us & Sourcing Highlights -->
+    <section class="py-5">
+      <div class="container-xl">
+        <div class="row align-items-center g-4 mb-5">
+          <div class="col-lg-5">
+            <span class="section-tag mb-2">Institutional Supplier Advantage</span>
+            <h2 class="section-title mb-3">Why Leading Wholesale Buyers Partner With Us</h2>
+            <p class="section-subtitle mb-4">
+              We bridge agricultural farming clusters and modern commercial distribution. Our automated milling facilities and dedicated dispatch logistics guarantee consistent grain elongation, strict moisture ceilings, and reliable container turnarounds.
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-1">
+              <a href="bulk-pricing.html" class="btn btn-wholesale-primary">
+                <span>View Volume Tiers</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="about.html" class="btn btn-wholesale-secondary">
+                <span>Our Heritage</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-sm-6 d-flex">
+                <div class="advantage-feature-box w-100 p-4 rounded-4 bg-surface border d-flex flex-column">
+                  <div class="d-flex align-items-center gap-2 text-primary fw-bold fs-5 mb-2">
+                    <i class="bi bi-patch-check-fill fs-4"></i>
+                    <span>Mill-Direct Pricing</span>
+                  </div>
+                  <p class="small text-muted mb-0 flex-grow-1">
+                    Eliminates multi-tier brokers, delivering direct mill-gate savings to your commercial balance sheet.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 d-flex">
+                <div class="advantage-feature-box w-100 p-4 rounded-4 bg-surface border d-flex flex-column">
+                  <div class="d-flex align-items-center gap-2 text-primary fw-bold fs-5 mb-2">
+                    <i class="bi bi-box-seam-fill fs-4"></i>
+                    <span>Custom Packaging</span>
+                  </div>
+                  <p class="small text-muted mb-0 flex-grow-1">
+                    25kg &amp; 50kg BOPP bags, jute sacks, and bulk totes with private-label retail branding and barcodes.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 d-flex">
+                <div class="advantage-feature-box w-100 p-4 rounded-4 bg-surface border d-flex flex-column">
+                  <div class="d-flex align-items-center gap-2 text-primary fw-bold fs-5 mb-2">
+                    <i class="bi bi-truck-front-fill fs-4"></i>
+                    <span>Rapid Turnaround</span>
+                  </div>
+                  <p class="small text-muted mb-0 flex-grow-1">
+                    Full truckload (FTL) dispatches within 24â€“48 hours from our centralized agro-logistics hub.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 d-flex">
+                <div class="advantage-feature-box w-100 p-4 rounded-4 bg-surface border d-flex flex-column">
+                  <div class="d-flex align-items-center gap-2 text-primary fw-bold fs-5 mb-2">
+                    <i class="bi bi-clipboard2-check-fill fs-4"></i>
+                    <span>Pre-Shipment Lab QA</span>
+                  </div>
+                  <p class="small text-muted mb-0 flex-grow-1">
+                    Every batch backed by certified moisture, Sortex purity, broken kernel, and foreign matter lab reports.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quality & Sourcing Highlights Banner (Unique Quality Inspection Image) -->
+        <div class="card border-0 rounded-4 overflow-hidden shadow-sm" style="background: linear-gradient(135deg, var(--primary) 0%, #0d281c 100%); color: #ffffff;">
+          <div class="card-body p-4 p-md-5">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <h3 class="fw-bold mb-3 text-white">Quality Inspection &amp; Sourcing Standards</h3>
+                <p class="text-white-50 mb-4" style="max-width: 650px;">
+                  Our quality control laboratories perform digital moisture measurement, grain calipers elongation testing, and Buhler Sortex optical color segregation on every lot before dispatch. We maintain foreign matter below 0.1% across all export consignments.
+                </p>
+                <div class="d-flex flex-wrap gap-4 text-white">
+                  <div>
+                    <span class="fs-4 fw-bold d-block text-warning">&lt; 0.1%</span>
+                    <span class="small opacity-75">Foreign Matter Ceiling</span>
+                  </div>
+                  <div class="border-start ps-4 border-white-50">
+                    <span class="fs-4 fw-bold d-block text-warning">100%</span>
+                    <span class="small opacity-75">Sortex Optical Cleaning</span>
+                  </div>
+                  <div class="border-start ps-4 border-white-50">
+                    <span class="fs-4 fw-bold d-block text-warning">Max 12.5%</span>
+                    <span class="small opacity-75">Controlled Moisture Content</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center text-lg-end mt-4 mt-lg-0">
+                <img src="assets/images/h1-quality-inspection.jpg" alt="Grain Quality Testing Lab" class="rounded-4 img-fluid shadow-lg" style="max-height: 220px; width: 100%; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How Our Wholesale Process Works -->
+    <section class="py-5 bg-muted">
+      <div class="container-xl">
+        <div class="text-center mb-5">
+          <span class="section-tag">Contract Execution Workflow</span>
+          <h2 class="section-title">How Our Wholesale Process Works</h2>
+          <p class="section-subtitle">From initial sample courier to multi-trailer dispatch, our four-step execution guarantees transparency.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Step 1 -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="process-step-card">
+              <div class="process-step-number">1</div>
+              <div class="process-icon"><i class="bi bi-chat-left-quote"></i></div>
+              <h4 class="fw-bold mb-2">1. Inquire &amp; Specs</h4>
+              <p class="small text-muted mb-0">Submit requested grain varieties, volume requirement (MT), sack packaging preference, and destination location.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="process-step-card">
+              <div class="process-step-number">2</div>
+              <div class="process-icon"><i class="bi bi-eyedropper"></i></div>
+              <h4 class="fw-bold mb-2">2. Sample &amp; Lab QA</h4>
+              <p class="small text-muted mb-0">We dispatch a sealed 500g lot sample with official digital moisture and elongation certificates for buyer approval.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="process-step-card">
+              <div class="process-step-number">3</div>
+              <div class="process-icon"><i class="bi bi-receipt-cutoff"></i></div>
+              <h4 class="fw-bold mb-2">3. Contract Execution</h4>
+              <p class="small text-muted mb-0">Formal commercial proforma issued with agreed pricing, delivery schedule, payment terms (LC/TT), and packaging artwork.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="process-step-card">
+              <div class="process-step-number">4</div>
+              <div class="process-icon"><i class="bi bi-truck-flatbed"></i></div>
+              <h4 class="fw-bold mb-2">4. Multi-Modal Dispatch</h4>
+              <p class="small text-muted mb-0">Loading on dedicated 25-ton trailers or maritime container stuffing at port with weighbridge slips and e-way transit tracking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B2B Customer Testimonials Section -->
+    <section class="py-5">
+      <div class="container-xl">
+        <div class="text-center mb-5">
+          <span class="section-tag">Institutional Buyer Feedback</span>
+          <h2 class="section-title">Trusted by Supermarket Chains &amp; Wholesalers</h2>
+          <p class="section-subtitle">Verified feedback from commercial procurement managers and regional grain distributors.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Review 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-b2b-card">
+              <div>
+                <div class="testimonial-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "AgroGrains has supplied 1121 Steam Basmati for our regional retail chain across 45 stores. Their sortex cleaning is immaculateâ€”zero broken grain complaints from our retail customers over 18 months."
+                </p>
+              </div>
+              <div class="client-meta">
+                <div class="client-corp-icon">
+                  <i class="bi bi-buildings"></i>
+                </div>
+                <div>
+                  <div class="client-name">Suresh Menon</div>
+                  <div class="client-role">Head of Sourcing, Apex Hypermarkets</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-b2b-card">
+              <div>
+                <div class="testimonial-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "We procure 100+ MT of Sona Masoori and Ponni Boiled monthly for hotel and institutional canteens. The consistency of moisture levels below 13% prevents any storage deterioration in our warehouse."
+                </p>
+              </div>
+              <div class="client-meta">
+                <div class="client-corp-icon">
+                  <i class="bi bi-globe2"></i>
+                </div>
+                <div>
+                  <div class="client-name">Tariq Al-Mansoor</div>
+                  <div class="client-role">Procurement Director, Gulf Foodservice Logistics</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="col-lg-4 col-md-12">
+            <div class="testimonial-b2b-card">
+              <div>
+                <div class="testimonial-rating">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Their unpolished Toor Dal and milling wheat quality are second to none. Reliable truckload dispatch times have allowed us to maintain lean inventory while never running dry on essential grains."
+                </p>
+              </div>
+              <div class="client-meta">
+                <div class="client-corp-icon">
+                  <i class="bi bi-truck"></i>
+                </div>
+                <div>
+                  <div class="client-name">David Bradley</div>
+                  <div class="client-role">Supply Chain VP, Heartland Commodity Distributors</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <small class="text-muted fst-italic">* Client testimonials represent verified commercial procurement case studies (editable placeholder).</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Bulk Enquiry CTA Section -->
+    <section class="py-5" style="background: linear-gradient(180deg, var(--bg-surface) 0%, var(--primary-subtle) 100%);">
+      <div class="container-xl">
+        <div class="quote-form-card mx-auto text-center p-4 p-md-5" style="max-width: 900px;">
+          <span class="section-tag mb-2">Direct Mill Quoting</span>
+          <h2 class="section-title mb-3">Ready to Secure Your Wholesale Grain Allocation?</h2>
+          <p class="section-subtitle mb-4">
+            Request custom mill-gate pricing, request physical grain samples, or schedule an inspection visit at our terminal facilities.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <button class="btn btn-wholesale-primary px-4 py-3" onclick="openQuoteModal()">
+              <i class="bi bi-pencil-square me-1"></i> Request a Custom Wholesale Quote
+            </button>
+            <a href="bulk-pricing.html" class="btn btn-wholesale-secondary px-4 py-3">
+              <i class="bi bi-calculator me-1"></i> Use Bulk Quantity Calculator
+            </a>
+            <a href="contact.html" class="btn btn-outline-dark rounded-pill px-4 py-3 fw-bold">
+              <i class="bi bi-telephone-outbound me-1"></i> Speak to Trade Desk
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Reusable Wholesale Quotation Modal -->
+  <div class="modal fade" id="globalQuoteModal" tabindex="-1" aria-labelledby="globalQuoteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h5 class="modal-title fw-bold" id="globalQuoteModalLabel">Request Official Wholesale Quotation</h5>
+            <div class="small text-muted">B2B commercial quotation dossier dispatched within 4 business hours</div>
+          </div>
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="global-modal-quote-form" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="modalQuoteName" class="form-label">Representative Name *</label>
+                <input type="text" class="form-control" id="modalQuoteName" placeholder="e.g. John Doe" required>
+                <div class="invalid-feedback">Valid alphabetic name required.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="modalQuoteCompany" class="form-label">Registered Business Name *</label>
+                <input type="text" class="form-control" id="modalQuoteCompany" placeholder="e.g. Global Foods Ltd" required>
+                <div class="invalid-feedback">Company name is required.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="modalQuoteEmail" class="form-label">Business Email Address *</label>
+                <input type="email" class="form-control" id="modalQuoteEmail" placeholder="procurement@company.com" required>
+                <div class="invalid-feedback">Valid business email required.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="modalQuotePhone" class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" id="modalQuotePhone" placeholder="+1 (555) 234-5678" required>
+                <div class="invalid-feedback">Valid phone format required (no letters).</div>
+              </div>
+              <div class="col-md-6">
+                <label for="modalQuoteProduct" class="form-label">Grain / Rice Variety *</label>
+                <select class="form-select" id="modalQuoteProduct" required>
+                  <option value="" selected>Select Grain Variety...</option>
+                  <option value="1121 Steam Basmati Rice">1121 Steam Basmati Rice</option>
+                  <option value="Traditional Aged Basmati Rice">Traditional Aged Basmati Rice</option>
+                  <option value="Sona Masoori Rice (Raw & Steam)">Sona Masoori Rice (Raw & Steam)</option>
+                  <option value="Ponni Boiled / Parboiled Rice">Ponni Boiled / Parboiled Rice</option>
+                  <option value="South Indian Idli Rice">South Indian Idli Rice</option>
+                  <option value="Premium Brown Rice">Premium Brown Rice</option>
+                  <option value="Raw White Rice (IR64 / PR11)">Raw White Rice (IR64 / PR11)</option>
+                  <option value="Single Boiled Golden Rice">Single Boiled Golden Rice</option>
+                  <option value="Milling Wheat (Sharbati & Durum)">Milling Wheat (Sharbati & Durum)</option>
+                  <option value="Yellow Grain Maize">Yellow Grain Maize</option>
+                  <option value="Pearl & Finger Millet">Pearl & Finger Millet</option>
+                  <option value="Premium Toor Dal">Premium Toor Dal (Yellow Split)</option>
+                  <option value="Urad Dal (Split & Whole)">Urad Dal (Split & Whole)</option>
+                  <option value="Moong Dal (Yellow & Green)">Moong Dal (Yellow & Green)</option>
+                  <option value="Chana Dal & Chickpeas">Chana Dal & Chickpeas</option>
+                </select>
+                <div class="invalid-feedback">Please select a product.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="modalQuoteQty" class="form-label">Required Quantity *</label>
+                <select class="form-select" id="modalQuoteQty" required>
+                  <option value="" selected>Choose Volume Bracket...</option>
+                  <option value="1 - 5 MT (Sample Commercial Lot)">1 - 5 MT (Sample Commercial Lot)</option>
+                  <option value="5 - 15 MT (Multi-Pallet Lot)">5 - 15 MT (Multi-Pallet Lot)</option>
+                  <option value="25 MT (Full Truckload FTL)">25 MT (Full Truckload FTL)</option>
+                  <option value="50+ MT (Multi-Trailer Schedule)">50+ MT (Multi-Trailer Schedule)</option>
+                  <option value="100+ MT (Rake / Maritime Container Export)">100+ MT (Rake / Maritime Container Export)</option>
+                </select>
+                <div class="invalid-feedback">Please specify volume bracket.</div>
+              </div>
+              <div class="col-12">
+                <label for="modalQuoteNotes" class="form-label">Packaging &amp; Delivery Destination Note</label>
+                <textarea class="form-control" id="modalQuoteNotes" rows="3" placeholder="Specify packaging (25kg BOPP, 50kg PP, 1 MT Jumbo) and destination port or warehouse city..."></textarea>
+              </div>
+            </div>
+            <div class="mt-4 text-end">
+              <button type="button" class="btn btn-secondary rounded-pill px-3" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-wholesale-primary px-4">
+                <i class="bi bi-send-fill me-1"></i> Transmit Quote Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="wholesale-footer">
+    <div class="container-xl">
+      <div class="row g-4">
+        <!-- Brand & Bio -->
+        <div class="col-lg-4 col-md-6">
+          <a class="footer-brand d-flex align-items-center gap-2 mb-3 text-decoration-none" href="index.html">
+            <img src="assets/images/brand-icon.svg" alt="AgroGrains Emblem" width="38" height="38" class="brand-logo-img">
+            <span class="brand-title text-white fw-bold fs-4" style="line-height: 1; letter-spacing: -0.02em;">AgroGrains</span>
+          </a>
+          <p class="text-white-50 small mb-3">
+            AgroGrains is a premier B2B agricultural merchant and direct-mill processor supplying export-certified Basmati rice, regional staples, milling grains, and sorted pulses to retailers, distributors, and bulk food processors worldwide.
+          </p>
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+            <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">ISO 22000 Certified</span>
+            <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">HACCP Compliant</span>
+            <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">FSSAI Registered</span>
+          </div>
+          <!-- Official Social Channels -->
+          <div class="footer-social-links pt-1">
+            <span class="small text-white-50 me-2">Connect:</span>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow AgroGrains on Instagram" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow AgroGrains on Facebook" title="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow AgroGrains on X (Twitter)" title="X (Twitter)">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Connect with AgroGrains on LinkedIn" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home Page 1</a></li>
+            <li><a href="home-2.html">Home Page 2</a></li>
+            <li><a href="about.html">About AgroGrains</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="bulk-pricing.html">Bulk Pricing</a></li>
+            <li><a href="blog.html">Industry Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Product Categories (Direct Filter Redirection) -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Core Commodities</h5>
+          <ul class="footer-links">
+            <li><a href="products.html?category=basmati#products-catalog-section"><i class="bi bi-chevron-right small text-success me-1"></i>1121 &amp; Aged Basmati</a></li>
+            <li><a href="products.html?category=non-basmati#products-catalog-section"><i class="bi bi-chevron-right small text-success me-1"></i>Sona Masoori &amp; Ponni</a></li>
+            <li><a href="products.html?search=Idli#products-catalog-section"><i class="bi bi-chevron-right small text-success me-1"></i>South Indian Idli Rice</a></li>
+            <li><a href="products.html?category=specialty#products-catalog-section"><i class="bi bi-chevron-right small text-success me-1"></i>Whole Grain Brown Rice</a></li>
+            <li><a href="products.html?search=Wheat#products-catalog-section"><i class="bi bi-chevron-right small text-success me-1"></i>Sharbati Milling Wheat</a></li>
+            <li><a href="products.html?category=pulses#products-catalog-section"><i class="bi bi-chevron-right small text-success me-1"></i>Sorted Pulses &amp; Dals</a></li>
+          </ul>
+        </div>
+
+        <!-- Wholesale Contact Info Placeholder -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Commercial Trade Desk</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong>Mill Terminal &amp; Warehousing:</strong><br>
+              <span class="text-white-50">AgroGrains Terminal Hub, Gate 4, National Grain Logistics Corridor, Industrial Agro Zone, MH 400705</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <strong>Procurement Desk:</strong><br>
+              <span class="text-white-50">+1 (800) 555-GRAIN / +91 (22) 5550-1920</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <strong>Commercial Inquiries:</strong><br>
+              <span class="text-white-50">trade@agrograins-wholesale.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar with Privacy Policy & Terms of Service -->
+      <div class="footer-bottom-bar d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 AgroGrains Wholesale Merchant. All Rights Reserved. B2B Commercial Wholesale Supply.
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="javascript:void(0)" onclick="openPrivacyModal()" class="text-white-50 text-decoration-none hover-white small">Privacy Policy</a>
+          <span class="text-white-50 small">&bull;</span>
+          <a href="javascript:void(0)" onclick="openTermsModal()" class="text-white-50 text-decoration-none hover-white small">Terms of Service</a>
+          <span class="text-white-50 small d-none d-sm-inline">&bull;</span>
+          <span class="text-white-50 small d-none d-sm-inline">Strictly Wholesale &bull; MOQ: 1 MT</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS Modules -->
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
+
