@@ -767,7 +767,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             <div class="product-specs-list">
               <div class="product-spec-row">
-                <span class="product-spec-label">Grade Standard:</span>
+                <span class="product-spec-label">Grade:</span>
                 <span class="product-spec-value">${item.grade}</span>
               </div>
               <div class="product-spec-row">
@@ -803,7 +803,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalBody = document.getElementById('specsModalBody');
     const quoteBtn = document.getElementById('specsModalQuoteBtn');
 
-    if (modalTitle) modalTitle.textContent = `${item.name} â€“ Technical Specifications`;
+    if (modalTitle) modalTitle.textContent = `${item.name} – Technical Specifications`;
     if (quoteBtn) {
       quoteBtn.onclick = () => {
         const specsModalEl = document.getElementById('specsModal');

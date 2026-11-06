@@ -650,10 +650,9 @@ function initBlogListing() {
             <img src="${art.image}" alt="${art.title}" class="card-img-top blog-card-img" loading="lazy">
           </div>
           <div class="card-body blog-card-body d-flex flex-column">
-            <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
-              <span class="badge bg-light text-primary border">${art.categoryLabel}</span>
-              <span class="small text-muted"><i class="bi bi-clock me-1"></i>${art.readTime}</span>
-              <span class="small text-muted ms-auto"><i class="bi bi-calendar3 me-1"></i>${art.date}</span>
+            <div class="blog-card-meta d-flex align-items-center justify-content-between mb-2">
+              <span class="badge blog-category-badge">${art.categoryLabel}</span>
+              <span class="small text-muted text-nowrap"><i class="bi bi-calendar3 me-1"></i>${art.date}</span>
             </div>
             <h5 class="card-title fw-bold blog-card-title mb-2">
               <a href="blog-details.html?id=${art.id}" class="text-decoration-none text-main">
@@ -663,9 +662,15 @@ function initBlogListing() {
             <p class="card-text text-muted blog-card-excerpt small flex-grow-1">
               ${art.excerpt}
             </p>
-            <div class="pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
-              <span class="small text-muted"><i class="bi bi-person me-1"></i>${art.author.split('(')[0].trim()}</span>
-              <a href="blog-details.html?id=${art.id}" class="btn-link text-primary fw-semibold small text-decoration-none">
+            <div class="blog-card-footer pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-2 small text-muted">
+                <span class="text-truncate" style="max-width: 140px;" title="${art.author.split('(')[0].trim()}">
+                  <i class="bi bi-person me-1"></i>${art.author.split('(')[0].trim()}
+                </span>
+                <span class="text-subtle">•</span>
+                <span class="text-nowrap"><i class="bi bi-clock me-1"></i>${art.readTime}</span>
+              </div>
+              <a href="blog-details.html?id=${art.id}" class="btn-link text-primary fw-semibold small text-decoration-none text-nowrap">
                 Read More <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -753,17 +758,20 @@ function loadArticleDetail() {
             <img src="${rel.image}" alt="${rel.title}" class="card-img-top blog-card-img" loading="lazy">
           </div>
           <div class="card-body blog-card-body d-flex flex-column p-3">
-            <div class="d-flex align-items-center gap-2 mb-2">
-              <span class="badge bg-light text-primary border">${rel.categoryLabel}</span>
-              <span class="small text-muted ms-auto">${rel.readTime}</span>
+            <div class="blog-card-meta d-flex align-items-center justify-content-between mb-2">
+              <span class="badge blog-category-badge">${rel.categoryLabel}</span>
+              <span class="small text-muted text-nowrap"><i class="bi bi-calendar3 me-1"></i>${rel.date}</span>
             </div>
-            <h6 class="card-title fw-bold mb-2">
+            <h6 class="card-title fw-bold blog-card-title mb-2" style="min-height: 2.8rem; -webkit-line-clamp: 2;">
               <a href="blog-details.html?id=${rel.id}" class="text-decoration-none text-main">${rel.title}</a>
             </h6>
-            <p class="small text-muted mb-3 flex-grow-1">${rel.excerpt.slice(0, 100)}...</p>
-            <a href="blog-details.html?id=${rel.id}" class="text-primary fw-semibold small text-decoration-none mt-auto">
-              Read Analysis &rarr;
-            </a>
+            <p class="small text-muted blog-card-excerpt mb-3 flex-grow-1" style="min-height: 3rem; -webkit-line-clamp: 2;">${rel.excerpt.slice(0, 100)}...</p>
+            <div class="blog-card-footer pt-2 border-top mt-auto d-flex align-items-center justify-content-between">
+              <span class="small text-muted"><i class="bi bi-clock me-1"></i>${rel.readTime}</span>
+              <a href="blog-details.html?id=${rel.id}" class="text-primary fw-semibold small text-decoration-none text-nowrap">
+                Read Analysis &rarr;
+              </a>
+            </div>
           </div>
         </div>
       </div>

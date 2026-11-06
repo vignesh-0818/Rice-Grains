@@ -1148,18 +1148,27 @@ nav.wholesale-navbar,
 .product-spec-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.35rem;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
 }
 .product-spec-row:last-child {
   margin-bottom: 0;
 }
 .product-spec-label {
   color: var(--text-subtle);
-  font-weight: 500;
+  font-weight: 600;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
 }
 .product-spec-value {
   color: var(--text-main);
   font-weight: 700;
+  text-align: right;
+  word-break: normal;
+}
+[dir="rtl"] .product-spec-value {
+  text-align: left;
 }
 
 .product-card-footer {
@@ -1215,6 +1224,57 @@ nav.wholesale-navbar,
 .feature-box p {
   font-size: 0.925rem;
   margin-bottom: 0;
+}
+
+/* Quality Inspection & Sourcing Standards Banner */
+.quality-sourcing-banner {
+  background: linear-gradient(135deg, #112d1f 0%, #0a1b12 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(82, 183, 136, 0.25) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-theme="dark"] .quality-sourcing-banner {
+  background: linear-gradient(135deg, #143525 0%, #0d2117 100%) !important;
+  border-color: #274535 !important;
+}
+
+.quality-sourcing-banner .banner-title {
+  color: #ffffff !important;
+  font-weight: 800;
+  font-size: 1.65rem;
+  letter-spacing: -0.01em;
+}
+
+.quality-sourcing-banner .banner-desc {
+  color: #d8f3dc !important;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  max-width: 650px;
+}
+
+.quality-sourcing-banner .banner-stat-value {
+  color: #52b788 !important;
+  font-weight: 800;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+.quality-sourcing-banner .banner-stat-label {
+  color: #b7e4c7 !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.quality-sourcing-banner .banner-divider {
+  border-left: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+[dir="rtl"] .quality-sourcing-banner .banner-divider {
+  border-left: none !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding-left: 0 !important;
+  padding-right: 1.5rem !important;
 }
 
 /* Process Steps & Operating Model Cards */
@@ -1363,24 +1423,38 @@ nav.wholesale-navbar,
   border-color: var(--primary);
   box-shadow: var(--shadow-lg);
   transform: scale(1.02);
+  padding-top: 2.6rem !important;
 }
 
 .tier-featured-pill {
-  position: absolute;
-  top: -13px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--primary);
-  color: #ffffff;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  padding: 4px 14px;
-  border-radius: var(--radius-pill);
-  text-transform: uppercase;
+  position: absolute !important;
+  top: -14px !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  background: var(--primary) !important;
+  color: #ffffff !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.06em !important;
+  padding: 5px 18px !important;
+  border-radius: var(--radius-pill) !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22) !important;
+  z-index: 10 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 [data-theme="dark"] .tier-featured-pill {
-  color: #0d1612;
+  background: #52b788 !important;
+  color: #091a11 !important;
+}
+[dir="rtl"] .tier-featured-pill {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
 }
 
 .tier-volume-range {
@@ -1676,9 +1750,9 @@ nav.wholesale-navbar,
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
   transition: all var(--transition-normal);
 }
 
@@ -1707,9 +1781,29 @@ nav.wholesale-navbar,
 
 .blog-card-body {
   padding: 1.5rem;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.blog-card-meta {
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.blog-category-badge {
+  background-color: var(--primary-subtle);
+  color: var(--primary);
+  border: 1px solid rgba(27, 67, 50, 0.2);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
 }
 
 .blog-meta-row {
@@ -1722,10 +1816,15 @@ nav.wholesale-navbar,
 }
 
 .blog-card-title {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 0.65rem;
   line-height: 1.35;
+  min-height: 4.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .blog-card-title a {
@@ -1736,10 +1835,22 @@ nav.wholesale-navbar,
 }
 
 .blog-card-excerpt {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
   color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 4.1rem;
   margin-bottom: 1.25rem;
   flex-grow: 1;
+}
+
+.blog-card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
 }
 
 .blog-author-strip {
@@ -2607,12 +2718,14 @@ nav.wholesale-navbar,
   border-bottom-color: #243d30 !important;
 }
 
-[data-theme="dark"] .spec-label {
+[data-theme="dark"] .spec-label,
+[data-theme="dark"] .product-spec-label {
   color: #a4c5b5 !important;
   font-weight: 600;
 }
 
-[data-theme="dark"] .spec-value {
+[data-theme="dark"] .spec-value,
+[data-theme="dark"] .product-spec-value {
   color: #ffffff !important;
   font-weight: 700;
 }
@@ -2629,6 +2742,16 @@ nav.wholesale-navbar,
 
 [data-theme="dark"] .blog-card-excerpt {
   color: #cde2d7 !important;
+}
+
+[data-theme="dark"] .blog-category-badge {
+  background-color: rgba(82, 183, 136, 0.18) !important;
+  color: #52b788 !important;
+  border-color: rgba(82, 183, 136, 0.35) !important;
+}
+
+[data-theme="dark"] .blog-card-footer {
+  border-top-color: #243d30 !important;
 }
 
 /* Navbar in Dark Mode */
