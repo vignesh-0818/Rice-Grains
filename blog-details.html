@@ -139,10 +139,12 @@
 
               <!-- Author Strip -->
               <div class="d-flex align-items-center gap-3 py-3 mb-4 border-top border-bottom border-subtle">
-                <div class="client-avatar-badge" style="width: 44px; height: 44px;">AG</div>
-                <div>
+                <div id="article-author-avatar-wrap" class="flex-shrink-0">
+                  <div class="client-avatar-badge" style="width: 44px; height: 44px;">AG</div>
+                </div>
+                <div class="flex-grow-1" style="min-width: 0;">
                   <div class="fw-bold text-main" id="article-author">Author Name</div>
-                  <div class="small text-muted">Grain Science &amp; Commercial Quality Contributor</div>
+                  <div class="small text-muted" id="article-author-role">Grain Science &amp; Commercial Quality Contributor</div>
                 </div>
               </div>
 
@@ -157,12 +159,14 @@
               </div>
 
               <!-- Author Bio Card -->
-              <div class="p-4 rounded-3 bg-muted border mt-5">
-                <div class="d-flex align-items-center gap-3">
-                  <div class="client-avatar-badge" style="width: 52px; height: 52px; font-size: 1.25rem;">AG</div>
-                  <div>
-                    <h5 class="fw-bold mb-1">AgroGrains Technical Research Group</h5>
-                    <p class="small text-muted mb-0">
+              <div class="p-4 rounded-3 bg-muted border mt-5" id="article-author-bio-card">
+                <div class="d-flex align-items-start gap-3">
+                  <div id="article-bio-avatar-wrap" class="flex-shrink-0">
+                    <div class="client-avatar-badge" style="width: 56px; height: 56px; font-size: 1.25rem;">AG</div>
+                  </div>
+                  <div class="flex-grow-1" style="min-width: 0;">
+                    <h5 class="fw-bold mb-1" id="article-bio-name">AgroGrains Technical Research Group</h5>
+                    <p class="small text-muted mb-0" id="article-bio-desc">
                       Our milling and agronomist contributors possess over 25 years of field experience in paddy genetics, Buhler sortex calibration, and international export phytosanitary compliance.
                     </p>
                   </div>

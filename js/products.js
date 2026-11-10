@@ -767,7 +767,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             <div class="product-specs-list">
               <div class="product-spec-row">
-                <span class="product-spec-label">Grade:</span>
+                <span class="product-spec-label">Grade Standard:</span>
                 <span class="product-spec-value">${item.grade}</span>
               </div>
               <div class="product-spec-row">

@@ -7,35 +7,35 @@
 const wholesaleArticles = [
   {
     id: "milling-and-sortex-cleaning-technology",
-    title: "Milling and Sortex Cleaning: How Modern Technology Guarantees Purity in Grains",
+    title: "Millet and Sortex Cleaning: How Modern Technology Guarantees Purity in Grains",
     category: "milling",
     categoryLabel: "Milling & Quality",
     date: "October 02, 2026",
     author: "Vikramjit Singh (Plant Operations Director)",
     readTime: "8 min read",
     image: "assets/images/blog-sortex-optical-cleaning.jpg",
-    excerpt: "Examine how multi-camera bichromatic optical sorters, de-stoners, and magnetic separators remove foreign matter and discolored kernels to achieve 99.9% purity.",
+    excerpt: "Examine how multi-camera bichromatic optical sorters, micro-destoners, and infrared Sortex technologies process ancient millets and grains to achieve 99.9% purity.",
     contentHtml: `
-      <p>In high-volume commercial grain procurement, grain purity is not merely an aesthetic parameter—it directly dictates downstream packaging speed, shelf life, and international phytosanitary compliance. Modern optical sortex cleaning has revolutionized mill processing, replacing traditional mechanical screens with artificial-intelligence-driven machine vision capable of inspecting tens of thousands of individual falling kernels per second.</p>
+      <p>In high-volume commercial grain procurement, grain and millet purity is not merely an aesthetic parameter—it directly dictates downstream packaging speed, shelf life, and international phytosanitary compliance. Modern optical sortex cleaning has revolutionized processing for rice, commercial milling grains, and ancient millets (such as Ragi, Bajra, and Sorghum), replacing traditional mechanical screens with artificial-intelligence-driven machine vision capable of inspecting tens of thousands of individual falling kernels per second.</p>
 
       <h2>1. The Multi-Stage Mechanical & Optical Cleaning Flow</h2>
-      <p>Raw paddy and field-harvested grain arrivals contain significant extraneous material, ranging from straw, husks, and weed seeds to dense stones, field mud clods, and metallic debris. To guarantee 99.9% wholesale purity, processing follows an unbroken multi-machine sequence:</p>
+      <p>Raw paddy and field-harvested grain arrivals contain significant extraneous material, ranging from straw, husks, and weed seeds to dense stones, field mud clods, and metallic debris. For diminutive crops like finger millet (ragi) and pearl millet (bajra), traditional mechanical sieves often fail because weed seeds and sand grains share identical physical dimensions with the millet kernels. To guarantee 99.9% wholesale purity, processing follows an unbroken multi-machine sequence:</p>
       <ol>
         <li><strong>Rotary Scalping & Pre-Cleaning:</strong> High-throughput rotary drum screens strip away oversized field debris, coarse straw, and stalk fragments before grain enters precision conveyors.</li>
         <li><strong>Vibratory Destoning & Specific Gravity Tables:</strong> Grains are fluidized on inclined oscillating decks. Air currents stratify materials by density: heavy stones and glass particles migrate uphill toward the reject chute, while lighter grain floats smoothly toward the processing flow.</li>
         <li><strong>Magnetic Separation Grids:</strong> Rare-earth neodymium magnetic grids capture ferrous metal fragments, baling wire shards, and machinery wear particles before grains reach the de-huskers.</li>
-        <li><strong>Rubber-Roll De-Husking & Husk Aspiration:</strong> Counter-rotating polyurethane rubber rollers operate at controlled differential speeds to gently shear off the fibrous husk without fracturing the rice endosperm. Powerful cyclone aspirators instantly pull away husks for boiler fuel.</li>
-        <li><strong>Multi-Camera Bichromatic Optical Color Sorting (Sortex):</strong> Kernels free-fall through high-intensity LED and InGaAs infrared inspection zones. High-speed CCD sensors photograph each grain from multiple angles. Pneumatic micro-ejector valves fire focused micro-pulses of compressed air (within 1/1000th of a second) to blast defective grains into the reject stream.</li>
+        <li><strong>De-Husking, Decortication & Husk Aspiration:</strong> Counter-rotating polyurethane rubber rollers or abrasive emery carborundum cones operate at controlled differential speeds to gently decorticate grains and remove tough millet pericarp without shattering endosperm. Cyclone aspirators instantly remove fibrous chaff.</li>
+        <li><strong>Multi-Camera Bichromatic Optical Color Sorting (Sortex):</strong> Kernels and ancient millets free-fall through high-intensity LED and InGaAs infrared inspection zones. High-speed CCD sensors photograph each grain from multiple angles. Pneumatic micro-ejector valves fire focused micro-pulses of compressed air (within 1/1000th of a second) to blast defective grains into the reject stream.</li>
       </ol>
 
       <div class="table-responsive my-4">
-        <table class="table table-bordered">
+        <table class="table table-bordered align-middle">
           <thead class="table-light">
             <tr>
-              <th>Processing Stage</th>
-              <th>Contaminant Eliminated</th>
-              <th>Detection Technology</th>
-              <th>Export Benchmark Threshold</th>
+              <th scope="col" style="min-width: 170px;">Processing Stage</th>
+              <th scope="col" style="min-width: 190px;">Contaminant Eliminated</th>
+              <th scope="col" style="min-width: 180px;">Detection Technology</th>
+              <th scope="col" style="min-width: 160px;">Export Benchmark Threshold</th>
             </tr>
           </thead>
           <tbody>
@@ -52,10 +52,16 @@ const wholesaleArticles = [
               <td>Zero tolerance (0 stones / MT)</td>
             </tr>
             <tr>
-              <td><strong>Bichromatic Sortex</strong></td>
+              <td><strong>Bichromatic Sortex (Rice &amp; Grains)</strong></td>
               <td>Chalky, yellow, black-tipped, peck-damaged</td>
               <td>Visible RGB + InGaAs Infrared</td>
               <td>99.9% Color Purity</td>
+            </tr>
+            <tr>
+              <td><strong>Millet &amp; Micro-Grain Sortex</strong></td>
+              <td>Weed seeds, sand, discolored millet, glumes</td>
+              <td>High-Res Trichromatic + InGaAs</td>
+              <td>&lt; 0.05% Foreign Seeds (99.95%)</td>
             </tr>
             <tr>
               <td><strong>Metal Detector</strong></td>
@@ -67,20 +73,20 @@ const wholesaleArticles = [
         </table>
       </div>
 
-      <h2>2. Distinguishing Optical Defects: Chalky vs Peck-Damaged Kernels</h2>
-      <p>Commercial buyers must verify how sorting parameters are programmed at the mill:</p>
+      <h2>2. Millet Sortex Cleaning: Overcoming Micro-Defect Challenges</h2>
+      <p>Because millets possess very small seed diameters (1.0 mm to 2.5 mm for Ragi and Bajra), optical color sorters require ultra-fine pneumatic ejection nozzles spaced at 2.5 mm intervals. Sorting algorithms must distinguish minute color variations between healthy golden bajra kernels and ergot-infected or mold-damaged dark grains.</p>
       <ul>
-        <li><strong>Chalky Grains (Immature Starch):</strong> Grains with opaque, milky centers. While safe to eat, chalky kernels have weakened crystalline starch bonds and crumble into broken fragments during cooking, releasing excessive starch and causing sticky clumps in commercial foodservice.</li>
-        <li><strong>Peck / Insect-Damaged Grains:</strong> Kernels pierced by stink bugs (Oebalus pugnax) while in the milk stage. The puncture site introduces fungal spores, leaving an indelible brown or black lesion that stains cooked rice and elevates free fatty acid (FFA) values.</li>
-        <li><strong>Discolored / Yellow Kernels:</strong> Result from moisture heat buildup inside paddy stacks prior to drying. Highly visible on supermarket shelves and rejected by premium retail brands.</li>
+        <li><strong>Finger Millet (Ragi) Color Segregation:</strong> Removes dark sand grains and wild grass seeds that escape rotary aspirators due to matching density.</li>
+        <li><strong>Pearl Millet (Bajra) Surface Defects:</strong> Identifies and rejects bitter, rancidity-prone discolored seeds, guaranteeing extended shelf-life for commercial buyers.</li>
+        <li><strong>Sorghum (Jowar) Speckle Removal:</strong> Eradicates red fungal spots and glume debris to ensure premium white flour grading.</li>
       </ul>
 
       <blockquote>
-        "Automated sortex systems operating with InGaAs shortwave-wave infrared illumination detect internal aflatoxin colonies and glass fragments that are completely invisible to standard RGB cameras."
+        "Automated sortex systems operating with InGaAs shortwave-wave infrared illumination detect internal aflatoxin colonies, insect puncture lesions, and glass fragments across rice and ancient millets that are completely invisible to standard RGB cameras."
       </blockquote>
 
       <h2>3. Procurement Best Practices for Commercial Buyers</h2>
-      <p>When reviewing Certificate of Analysis (COA) documents from mills, institutional purchasing managers should mandate independent sampling by third-party inspection agencies (such as SGS or Bureau Veritas). Insist on proforma guarantees specifying Sortex Purity ≥ 99.8% and maximum allowable foreign matter ≤ 0.05%.</p>
+      <p>When reviewing Certificate of Analysis (COA) documents from mills, institutional purchasing managers should mandate independent sampling by third-party inspection agencies (such as SGS or Bureau Veritas). Insist on proforma guarantees specifying Sortex Purity ≥ 99.8% and maximum allowable foreign matter ≤ 0.05% across all wholesale grain and millet consignments.</p>
     `
   },
   {
@@ -581,6 +587,66 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Author Profiles Registry for Dynamic Avatars, Highlights & Bios
+function getAuthorProfile(authorString) {
+  if (authorString.includes('Swaminathan') || authorString.includes('Dr.')) {
+    return {
+      name: 'Dr. K. Swaminathan',
+      avatar: 'assets/images/avatar-dr-swaminathan.jpg',
+      designation: 'Senior Agricultural Scientist',
+      bio: 'Dr. K. Swaminathan holds a Ph.D. in Cereal Chemistry and Agronomy with over 20 years of research in paddy starch genetics, amylose crystallization dynamics, and industrial grain grading standards across global export supply chains.'
+    };
+  }
+  if (authorString.includes('Elena Rostova')) {
+    const isTradeDir = authorString.includes('International Trade Director');
+    return {
+      name: 'Elena Rostova',
+      avatar: 'assets/images/avatar-elena-rostova.jpg',
+      designation: isTradeDir ? 'International Trade Director' : 'Supply Chain Quality Specialist',
+      bio: 'Elena Rostova coordinates international phytosanitary compliance, equilibrium grain moisture monitoring, and chain-of-custody audits for export-grade rice and pulses across European, Middle Eastern, and North American trade desks.'
+    };
+  }
+  if (authorString.includes('Vikramjit Singh')) {
+    return {
+      name: 'Vikramjit Singh',
+      avatar: 'assets/images/avatar-vikramjit-singh.jpg',
+      designation: 'Plant Operations Director',
+      bio: 'Vikramjit Singh directs commercial operations across AgroGrains milling facilities, overseeing high-throughput rotary pre-cleaning, pneumatic conveyance, and multi-stage bichromatic Sortex optical sorting systems with over 22 years of industrial milling leadership.'
+    };
+  }
+  if (authorString.includes('Arun Malhotra')) {
+    return {
+      name: 'Arun Malhotra',
+      avatar: 'assets/images/avatar-arun-malhotra.jpg',
+      designation: 'Procurement Advisory Head',
+      bio: 'Arun Malhotra leads commercial grain procurement advisory, structured hedging contracts, and wholesale supply agreements for supermarket retail chains and international food service conglomerates with 18 years of commodity trading expertise.'
+    };
+  }
+  if (authorString.includes('Rajeshwar Rao')) {
+    return {
+      name: 'Rajeshwar Rao',
+      avatar: 'assets/images/avatar-rajeshwar-rao.jpg',
+      designation: 'Chief Milling Technologist',
+      bio: 'Rajeshwar Rao specializes in precision grain beneficiation, rubber-roll de-husking kinematics, and Buhler optical color sorter sensor calibration, ensuring sub-0.1% foreign matter tolerances across export grain consignments.'
+    };
+  }
+  if (authorString.includes('David Bradley')) {
+    return {
+      name: 'David Bradley',
+      avatar: 'assets/images/avatar-david-bradley.jpg',
+      designation: 'Commodity Trading Desk Director',
+      bio: 'David Bradley manages international grain spot trade and forward physical contracting across global maritime corridors, specializing in FOB/CIF arbitrage, hedging frameworks, and bulk freight risk management.'
+    };
+  }
+  const cleanName = authorString.split('(')[0].trim();
+  return {
+    name: cleanName,
+    avatar: 'assets/images/avatar-david-bradley.jpg',
+    designation: 'Commercial Quality Contributor',
+    bio: 'Senior commercial grain and milling contributor at AgroGrains wholesale desk, specializing in agricultural commodity testing, supply chain logistics, and grain trade standards.'
+  };
+}
+
 function initBlogListing() {
   const blogGrid = document.getElementById('blog-grid');
   const searchInput = document.getElementById('blog-search');
@@ -643,9 +709,13 @@ function initBlogListing() {
       return;
     }
 
-    blogGrid.innerHTML = filtered.map(art => `
+    blogGrid.innerHTML = filtered.map(art => {
+      const author = getAuthorProfile(art.author);
+      const authorFooterMarkup = `<img src="${author.avatar}" alt="${author.name}" class="blog-card-author-avatar"><span class="author-name-highlight">${author.name}</span>`;
+
+      return `
       <div class="col-lg-4 col-md-6 mb-4">
-        <article class="card blog-card h-100 shadow-sm border-0">
+        <article class="card blog-card h-100 shadow-sm border-0 d-flex flex-column">
           <div class="blog-card-image-wrap">
             <img src="${art.image}" alt="${art.title}" class="card-img-top blog-card-img" loading="lazy">
           </div>
@@ -662,22 +732,23 @@ function initBlogListing() {
             <p class="card-text text-muted blog-card-excerpt small flex-grow-1">
               ${art.excerpt}
             </p>
-            <div class="blog-card-footer pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center gap-2 small text-muted">
-                <span class="text-truncate" style="max-width: 140px;" title="${art.author.split('(')[0].trim()}">
-                  <i class="bi bi-person me-1"></i>${art.author.split('(')[0].trim()}
+            <div class="blog-card-footer pt-3 border-top mt-auto d-flex align-items-center justify-content-between gap-2">
+              <div class="blog-card-author-meta d-flex align-items-center flex-nowrap" style="min-width: 0;">
+                <span class="blog-card-author-badge d-inline-flex align-items-center text-truncate" title="${author.name}">
+                  ${authorFooterMarkup}
                 </span>
-                <span class="text-subtle">•</span>
-                <span class="text-nowrap"><i class="bi bi-clock me-1"></i>${art.readTime}</span>
+                <span class="blog-card-meta-dot text-subtle">•</span>
+                <span class="blog-card-read-time text-nowrap"><i class="bi bi-clock me-1"></i>${art.readTime}</span>
               </div>
-              <a href="blog-details.html?id=${art.id}" class="btn-link text-primary fw-semibold small text-decoration-none text-nowrap">
+              <a href="blog-details.html?id=${art.id}" class="blog-card-read-more btn-link text-primary fw-semibold small text-decoration-none text-nowrap">
                 Read More <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
         </article>
       </div>
-    `).join('');
+    `;
+    }).join('');
   }
 
   // Event Listeners for Filters
@@ -733,6 +804,7 @@ function loadArticleDetail() {
   const dateEl = document.getElementById('article-date');
   const readTimeEl = document.getElementById('article-read-time');
   const authorEl = document.getElementById('article-author');
+  const authorRoleEl = document.getElementById('article-author-role');
   const imgEl = document.getElementById('article-featured-image');
   const contentEl = document.getElementById('article-content-body');
 
@@ -741,7 +813,34 @@ function loadArticleDetail() {
   if (catEl) catEl.textContent = article.categoryLabel;
   if (dateEl) dateEl.textContent = article.date;
   if (readTimeEl) readTimeEl.textContent = article.readTime;
-  if (authorEl) authorEl.textContent = article.author;
+  
+  const author = getAuthorProfile(article.author);
+
+  if (authorEl) {
+    authorEl.innerHTML = `<span class="author-name-highlight">${author.name}</span> <span class="text-muted fw-normal">(${author.designation})</span>`;
+  }
+  if (authorRoleEl) {
+    authorRoleEl.textContent = author.designation;
+  }
+
+  const authorAvatarWrap = document.getElementById('article-author-avatar-wrap');
+  const bioAvatarWrap = document.getElementById('article-bio-avatar-wrap');
+  const bioName = document.getElementById('article-bio-name');
+  const bioDesc = document.getElementById('article-bio-desc');
+
+  if (authorAvatarWrap) {
+    authorAvatarWrap.innerHTML = `<img src="${author.avatar}" alt="${author.name}" class="author-avatar-img">`;
+  }
+  if (bioAvatarWrap) {
+    bioAvatarWrap.innerHTML = `<img src="${author.avatar}" alt="${author.name}" class="author-avatar-img">`;
+  }
+  if (bioName) {
+    bioName.innerHTML = `<span class="author-name-highlight fs-5">${author.name}</span> <span class="badge bg-primary-subtle text-primary ms-2">${author.designation}</span>`;
+  }
+  if (bioDesc) {
+    bioDesc.textContent = author.bio;
+  }
+
   if (imgEl) {
     imgEl.src = article.image;
     imgEl.alt = article.title;
